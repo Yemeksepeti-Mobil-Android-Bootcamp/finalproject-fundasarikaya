@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:src="@drawable/viewpage1"
+        android:layout_margin="40dp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:text="Acıktın mı?"
+        android:textSize="24sp"
+        android:textColor="#D31919"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="Birbirinden güzel Restoran ve Yemek çeşitleri!"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

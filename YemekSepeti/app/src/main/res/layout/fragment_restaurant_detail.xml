@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.restaurantDetailFragment"
+    android:background="#E8E3E3">
+
+
+    <View
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/pointView"
+        tools:ignore="MissingConstraints"
+        />
+
+    <ImageView
+        android:id="@+id/DetailView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="40dp"
+        android:elevation="5dp"
+        />
+
+    <TextView
+        android:id="@+id/DetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/DetailView"
+        app:layout_constraintTop_toTopOf="@id/DetailView"
+        android:layout_marginLeft="40dp"
+        />
+
+    <View
+        android:id="@+id/pointView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        app:layout_constraintTop_toBottomOf="@id/DetailView"
+        app:layout_constraintStart_toStartOf="@id/DetailView"
+        app:layout_constraintEnd_toEndOf="@id/DetailView"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/panel"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:id="@+id/pointText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/pointView"
+        app:layout_constraintEnd_toEndOf="@id/pointView"
+        app:layout_constraintTop_toTopOf="@id/pointView"
+        app:layout_constraintBottom_toBottomOf="@id/pointView"
+        android:textSize="24sp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/minPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/DetailName"
+        app:layout_constraintTop_toBottomOf="@id/DetailName"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/workHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/minPrice"
+        app:layout_constraintTop_toBottomOf="@id/minPrice"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/workHours"
+        app:layout_constraintTop_toBottomOf="@id/workHours"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/Urunler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ürünler"
+        android:textSize="16sp"
+        android:textColor="#D31919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel"
+        android:layout_margin="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Urunler" />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

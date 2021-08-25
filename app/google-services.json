@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "990022090874",
+    "project_id": "yemeksepeti-1fccd",
+    "storage_bucket": "yemeksepeti-1fccd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990022090874:android:65745a8ec054121abfbbc3",
+        "android_client_info": {
+          "package_name": "com.sarikaya.yemeksepeti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990022090874-qiqdott66c5o2ns0q8h68ibit3fcmsf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZnyPpHp_N990eJM29qMFuuHuBur0UIK8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990022090874-qiqdott66c5o2ns0q8h68ibit3fcmsf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

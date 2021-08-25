@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/foodView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/foodView"
+            app:layout_constraintTop_toTopOf="@id/foodView"
+            android:layout_marginLeft="20dp"
+            android:text="Whopper"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+
+        <TextView
+            android:id="@+id/foodDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/foodName"
+            app:layout_constraintTop_toBottomOf="@id/foodName"
+            android:text="BK Planty Whopper + Patates + İçecek"
+            />
+
+        <View
+            android:id="@+id/addView"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            app:layout_constraintStart_toStartOf="@id/foodName"
+            app:layout_constraintBottom_toBottomOf="@id/foodView"
+            android:background="@drawable/point_view"
+            />
+
+        <View
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintStart_toStartOf="@id/addView"
+            app:layout_constraintEnd_toEndOf="@id/addView"
+            app:layout_constraintTop_toTopOf="@id/addView"
+            app:layout_constraintBottom_toBottomOf="@id/addView"
+            android:background="@drawable/plus"
+            />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/addView"
+            app:layout_constraintTop_toTopOf="@id/addView"
+            app:layout_constraintBottom_toBottomOf="@id/addView"
+            android:layout_marginLeft="20dp"
+            android:text="20 TL"
+            android:textColor="#D31919"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

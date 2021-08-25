@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/restaurantsFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.sarikaya.yemeksepeti.view.MainFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantsFragment"
+        android:name="com.sarikaya.yemeksepeti.view.RestaurantsFragment"
+        android:label="fragment_restaurants"
+        tools:layout="@layout/fragment_restaurants" >
+        <action
+            android:id="@+id/action_restaurantsFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.sarikaya.yemeksepeti.view.restaurantDetailFragment"
+        android:label="fragment_restaurant_detail"
+        tools:layout="@layout/fragment_restaurant_detail" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_restaurantDetailFragment_to_foodDetailFragment"
+            app:destination="@id/foodDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailFragment"
+        android:name="com.sarikaya.yemeksepeti.view.FoodDetailFragment"
+        android:label="fragment_food_detail"
+        tools:layout="@layout/fragment_food_detail" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_foodDetailFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.sarikaya.yemeksepeti.view.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <argument
+            android:name="restaurantName"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument android:name="foodName"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="count"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="price"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="note"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="resImg"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="foodImg"
+            app:argType="string"
+            android:defaultValue=" " />
+        <action
+            android:id="@+id/action_basketFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
